@@ -12,7 +12,7 @@ module.exports = {
         const key = req.query.key;
         if (!key) {
             return res.json({
-                Status: "Acesso negado."
+                Status: "Acesso negado"
             })
         }
         const valid = await Key.findAll({
